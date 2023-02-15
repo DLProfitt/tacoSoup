@@ -47,6 +47,12 @@ for (let i = 0; i < grades.length; i++) {
 };
 
 let letterGrades = [gradeA.length, gradeB.length, gradeC.length, gradeD.length, gradeF.length];
+let aStudents = letterGrades[0];
+let bStudents = letterGrades[1];
+
+console.log(`There are ${aStudents} students who received an A!`);
+console.log(`There are ${bStudents} students who received a B!`);
+
 let testNum = 0;
 
 for (let i = 0; i < letterGrades.length; i++) {
@@ -55,23 +61,17 @@ for (let i = 0; i < letterGrades.length; i++) {
     }
 };
 
-let aStudents = letterGrades[0];
-let bStudents = letterGrades[1];
-
-console.log(`There are ${aStudents} students who received an A!`);
-console.log(`There are ${bStudents} students who received a B!`);
-
 let mostCommonLetterGrade = letterGrades.indexOf(testNum);
 
 if (mostCommonLetterGrade = 0) {
     console.log('The most common letter grade was: A');
 } else if (mostCommonLetterGrade = 1) {
     console.log('The most common letter grade was: B');
-} else if (mostCommonLetterGrade = 1) {
+} else if (mostCommonLetterGrade = 2) {
     console.log('The most common letter grade was: C');
-} else if (mostCommonLetterGrade = 1) {
+} else if (mostCommonLetterGrade = 3) {
     console.log('The most common letter grade was: D');
-} else if (mostCommonLetterGrade = 1) {
+} else if (mostCommonLetterGrade = 4) {
     console.log('The most common letter grade was: F');
 };
 
