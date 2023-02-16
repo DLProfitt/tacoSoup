@@ -83,3 +83,39 @@ function avgPercentage(total, num) {
 };
 
 console.log(`The average percentage grade of all students was: ${avgPercent}%`);
+
+//Two, Four, Six, Eight - Who do we appreciate?! CHEER
+let firstNum = 0;
+let evenNumbers = [];
+
+for (let i = 2; i <= 8; i++) {
+    evenNumbers.push(i);
+    i += 1;
+};
+
+console.log(evenNumbers.join(' ') + ' Who do we appreciate?!');
+
+//Interrupting Cow
+var sentenceArray = ["the", "cow", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
+let firstMoo = [];
+let secondMoo = [];
+let thirdMoo = [];
+let finalMoo = [];
+
+for (let i = 0; i < sentenceArray.length; i++) {
+    if (i < 3) {
+        firstMoo.push(sentenceArray[i]);
+    } else if (i >= 3 && i < 6) {
+        secondMoo.push(sentenceArray[i]);
+    } else if (i >= 6 && i < 9) {
+        thirdMoo.push(sentenceArray[i]);
+    } else if (i >= 9 && i < 12) {
+        finalMoo.push(sentenceArray[i]);
+    }
+};
+
+firstMoo.push('MOOOOOO');
+secondMoo.push('MOOOOOO');
+thirdMoo.push('MOOOOOO');
+
+console.log(firstMoo.join(' ') + ' ' + secondMoo.join(' ') + ' ' + thirdMoo.join(' ') + ' ' + finalMoo.join(' '));
